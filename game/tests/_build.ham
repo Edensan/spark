@@ -1,0 +1,9 @@
+if [ SubDirOnce TOP spark game tests ] = 1 { return ; }
+
+defGoogleTest spark_game_tests ;
+importSparkCommon ;
+importSparkGame ;
+
+SRC = [ tkPkgSrc ] ;
+
+BUILD_SRC = [ tkBuildPackage $(SRC) : exc : $(CHK_SOURCES) ] ;

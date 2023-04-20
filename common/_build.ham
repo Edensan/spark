@@ -1,0 +1,5 @@
+SubDir TOP spark common ;
+
+if ! ( $(EMBEDDED) = 1 ) {
+  SubInclude TOP spark common tests ;
+}

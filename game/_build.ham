@@ -1,0 +1,6 @@
+SubDir TOP spark game ;
+
+SubInclude TOP spark game src ;
+if ! ( $(EMBEDDED) = 1 ) {
+  SubInclude TOP spark game tests ;
+}

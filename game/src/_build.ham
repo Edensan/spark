@@ -1,0 +1,11 @@
+if [ SubDirOnce TOP spark game src ] = 1 { return ; }
+
+defLib spark_game ;
+importSparkCommon ;
+importSparkGame ;
+
+SRC = [ tkPkgSrc ] ;
+SRC += [ tkPkgSrcSubDir objects ] ;
+
+## Build
+BUILD_SRC = [ tkBuildPackage $(SRC) : : $(CHK_SOURCES) ] ;

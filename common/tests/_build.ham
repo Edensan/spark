@@ -1,0 +1,7 @@
+if [ SubDirOnce TOP spark common tests ] = 1 { return ; }
+
+defGoogleTest spark_common_tests : 1.0.0 : ;
+importSparkCommon ;
+
+SRC = [ tkPkgSrc ] ;
+BUILD_SRC = [ tkBuildPackage $(SRC) : exc : $(CHK_SOURCES) ] ;
